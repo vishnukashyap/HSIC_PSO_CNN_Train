@@ -1,0 +1,35 @@
+# This file contains the configuration for the training #
+
+# dataset_type: this indicates the types of datasets that the model can be trained on #
+# the datasets which can be included here are CIFAR100 and CIFAR10 #
+dataset_name : "CIFAR10"
+
+# dataset_dir: this is the path to the directory that contains the dataset #
+dataset_dir : "../../../Dataset/CIFAR10"
+
+# batch_size: the batch size for training the model #
+batch_size : 128
+
+# device: the device on which the training is supposed to take place #
+device : "cuda"
+
+# epochs: the total number of epochs that the model is to be trained for #
+epochs : 20
+
+# train_val_split: train and validation split
+train_val_split: 0.8
+
+# num_workers: number of workers for reading from dataset
+num_workers : 4
+
+# checkpoint_path : path to save checkpoint
+checkpoint_path : "weights"
+
+# checkpoint_save_interval: number of epochs after which the model should be saved
+checkpoint_save_interval : 19
+
+# validation_interval : number of epochs after which the model should be validated
+validation_interval: 19
+
+# load_checkpoint_path: path containg the weights to be loaded
+load_checkpoint_path: null

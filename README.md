@@ -1,1 +1,3 @@
 # HSIC_PSO_CNN_Train
+## Description
+In this project we attempt to train ResNet-18 using the method described in the paper [The HSIC Bottleneck: Deep Learning without Back-Propagation](https://arxiv.org/pdf/1908.01580.pdf), but to update the weights of the network, we use Particle Swarm Optimization. In this work, we assign a number of particles for each layer in ResNet18 and then try to minimize the HSIC cost calculated for each particle using Particle Swarm Optimization
